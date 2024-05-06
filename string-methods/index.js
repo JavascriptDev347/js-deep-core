@@ -23,5 +23,35 @@ class StringMethods {
 }
 
 let str = new StringMethods("SALOM")
-console.log(str.toLowerCase())
+
+
+
+
+let s = "Hello world"
+
+//stringdan kerakli qismlarni ajratib olish
+console.log(s.substring(1, 4))
+console.log(s.slice(1, 4));
+console.log(s.slice(-3))
+// split stringni belgiga kora massivga ugirib berad
+console.log(s.split(" "));
+//  berilgan parametrni boshidan boshlab qidiradi birinchi uchraganini indexsini korsatad
+console.log(s.indexOf("l"))
+// oxiridan qidiradi va birinchi uchraganini chiqaradi
+console.log(s.lastIndexOf("l"))
+
+// Boolean searching functions in ES6 and later
+console.log(s.startsWith("Hell")) //true: the string starts with
+console.log(s.endsWith("!"))// => false: s does not end with that
+console.log(s.includes("or")) // => true: s includes substring "or"
+
+// Creating modified versions of a string
+console.log(s.replace("llo", "ya"))// => "Heya, world"
+console.log(s.toLowerCase())// => "hello, world")
+
+
+// Inspecting individual (16-bit) characters of a string
+
+console.log(s.charAt(0)) // => "H": the first character)
+console.log(s.charCodeAt(0)) // => 72: 16-bit number at the specified position)
 
