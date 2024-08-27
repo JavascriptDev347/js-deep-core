@@ -116,3 +116,34 @@
 
 //garbage collection
 
+
+
+//2623
+// function memoize(fn) {
+//     const k = {}
+//     return function (...args) {
+//         const key = JSON.stringify(args)
+
+//         if (key in k) {
+//             return k[key]
+//         }
+
+//         const result = fn(...args)
+//         k[key] = result;
+//         return result
+//     }
+// }
+
+// memoize("sum")
+
+async function sleep(millis) {
+    try {
+        let t = Date.now();
+        return t - millis
+    } catch (error) {
+        return error
+    }
+}
+
+
+console.log(sleep(100));
