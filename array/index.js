@@ -25,7 +25,16 @@ class Array {
         return Object.values(newArr)
     }
 
-    
+    filter(callback) {
+        let newArr = [];
+        for (let i = 0; i < this.length; i++) {
+            if (callback(this.data[i], i, this.data)) {
+                newArr.push(this.data[i])
+            }
+        }
+        return Object.values(newArr)
+    }
+
 }
 
 
