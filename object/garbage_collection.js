@@ -19,3 +19,6 @@ function marry(man, woman) {
 
 // Interlinked objects
 let family = marry({name: "Johnson"}, {name: "Asia"});
+
+delete family.father;
+delete family.mother.husband;

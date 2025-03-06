@@ -12,5 +12,13 @@
 
 ## Interlinked objects
 
-## ("./garbage_collection.js") 
+## Link for code https://github.com/JavascriptDev347/js-deep-core/blob/dev/object/garbage_collection.js#L21
+
+## Result
+
 ![img_2.png](img_2.png)
+
+## if we write https://github.com/JavascriptDev347/js-deep-core/blob/dev/object/garbage_collection.js#L23-L24
+## Result
+![img_3.png](img_3.png)
+
